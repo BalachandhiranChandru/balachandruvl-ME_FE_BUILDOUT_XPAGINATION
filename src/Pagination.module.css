@@ -1,0 +1,84 @@
+/* General Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.table-title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Table Styling */
+.table-wrapper {
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.header-row {
+  background-color: #008080; /* Teal/Green color from the screenshot */
+  color: white;
+}
+
+.employee-table th, .employee-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.employee-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Pagination Styling */
+.pagination-controls {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.pagination-controls button {
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.pagination-controls button:not([disabled]):hover {
+  background-color: #f0f0f0;
+}
+
+.pagination-controls button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.page-number {
+  padding: 8px 12px;
+  margin: 0 5px;
+  font-weight: bold;
+  border: 1px solid #008080;
+  border-radius: 4px;
+  background-color: #008080;
+  color: white;
+  display: inline-block;
+}
+
+.loading-state {
+  padding: 50px;
+  font-size: 1.2em;
+  color: #555;
+}
